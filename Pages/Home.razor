@@ -1,0 +1,72 @@
+﻿@page "/"
+
+<PageTitle>Calculadora IMC</PageTitle>
+
+<div class="container">
+    <Slide Id="Calculator">
+        <img src="imgs/icon-no-bg.png" alt="Calculadora de IMC">
+        <h1>Calculadora de IMC</h1>
+        <Calculator />
+    </Slide>
+    <Slide Id="history">
+        <History />
+    </Slide>
+    <Slide Id="about">
+        <div class="imc-container">
+            <h2>Entenda o seu IMC</h2>
+
+            <p>O <strong>Índice de Massa Corporal (IMC)</strong> é o padrão internacional usado pela Organização Mundial
+                da Saúde (OMS) para avaliar se o seu peso está saudável em relação à sua altura.</p>
+
+                <div class="formula-box">
+                    <h3>Como o cálculo é feito?</h3>
+                    <p>A fórmula divide o seu peso (em kg) pela sua altura (em metros) elevada ao quadrado:</p>
+                    <p class="formula">IMC = Peso / (Altura × Altura)</p>
+                </div>
+
+                <h3>Tabela de Classificação</h3>
+
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Resultado</th>
+                                <th>Classificação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Menos de 18,5</td>
+                                <td>Abaixo do peso</td>
+                            </tr>
+                            <tr class="highlight">
+                                <td>18,5 a 24,9</td>
+                                <td>Peso normal</td>
+                            </tr>
+                            <tr>
+                                <td>25,0 a 29,9</td>
+                                <td>Sobrepeso</td>
+                            </tr>
+                            <tr>
+                                <td>30,0 a 34,9</td>
+                                <td>Obesidade Grau I</td>
+                            </tr>
+                            <tr>
+                                <td>35,0 a 39,9</td>
+                                <td>Obesidade Grau II</td>
+                            </tr>
+                            <tr>
+                                <td>Mais de 40,0</td>
+                                <td>Obesidade Grau III</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="footer-note">
+                    <strong>Importante:</strong> O IMC não diferencia massa muscular de gordura. Se você é atleta, este
+                    índice pode não refletir sua real composição corporal. Consulte sempre um especialista.
+                </p>
+            </div>
+        </Slide>
+    </div>
