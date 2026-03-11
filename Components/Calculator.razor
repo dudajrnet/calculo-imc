@@ -31,12 +31,12 @@
         <button type="submit" class="btn btn-filled btn-auto mb">
             Calcular meu IMC
         </button>                 
-        <a class="btn btn-link"href="/calculo-imc/#about">
+        <a class="btn btn-link"href="#about">
             Entenda o cálculo
         </a> 
-        <button @onclick="ClearDataAsync" class="btn btn-filled btn-auto mb">
+        @* <button @onclick="ClearDataAsync" class="btn btn-filled btn-auto mb">
             Limpar Histórico
-        </button>                
+        </button>                 *@
     </div>
 </EditForm>
 
@@ -82,6 +82,6 @@
         AppState.History.Clear();
         await _localStorage.RemoveItemAsync("data");
         _model = new();
-        _navigation.NavigateTo("/calculo-imc/", true);
+        _navigation.NavigateTo("", true);
     }  
 }
