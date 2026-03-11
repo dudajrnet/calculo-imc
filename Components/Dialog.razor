@@ -29,7 +29,7 @@
     {
         await JSRuntime.InvokeVoidAsync("hideModal","result-dialog");        
         StateHasChanged(); 
-        _navigation.NavigateTo("#history");
+        _navigation.NavigateTo("/calculo-imc/#history");
         await OnModalCloseCallBack.InvokeAsync();
     }     
  }
